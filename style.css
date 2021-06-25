@@ -13,7 +13,7 @@ body {
   left: 0px;
   width: 250px;
   height: 100%;
-  background: #093b52;
+  background: #042331;
   transition: all .5s ease;
 }
 .sidebar header {
@@ -26,8 +26,8 @@ body {
 }
 
 .sidebar img{
-    height: 50px;
-    padding: 10px 80px;
+    height: 33px;
+    padding: 12px 80px;
 }
 .sidebar ul a{
   display: block;
@@ -74,8 +74,8 @@ label img {
 label #cancel{
   z-index: 1111;
   left: 195px;
-  top: 17px;
-  font-size: 30px;
+  top: 15px;
+  font-size: 20px;
   color: #0a5275;
   padding: 4px 9px;
   transition: all .5s ease;
@@ -95,12 +95,15 @@ label #cancel{
   margin-left: 0px;
 }
 section{
-  background: url(Daun.jpg) no-repeat;
-  background-position: center;
+  background: url(section.jpg) no-repeat;
+  background-position:center top;
   background-size: cover;
   height: 100vh;
   transition: all .5s;
-  margin-left: -250px;
+}
+.container{
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
 }
 .navbar {
     height: 60px;
@@ -127,4 +130,66 @@ section{
 a:hover {
     border: 1px solid  white;
     transition: .5s;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+.hi1 {
+  padding-left: 900px;
+  font-size: 45px;
+  color: rgba(255,255,255,.70);
+  font-family: sans-serif;
+  padding-top: 30px;
+}
+
+.hi2{
+  padding-left: 900px;
+  font-size: 35px;
+  color: rgba(255,255,255,.70);
+  font-family: sans-serif;
+}
+.space{
+  padding-top: 430px;
+}
+.typewriter1 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 15px;
+  padding-left: 350px;
+  margin-bottom: 20px;
+  color: rgba(255,255,255,.70);
+}
+.typewriter1 {
+  animation: animated-text1 2s steps(29,end) 1s 1 normal both,
+             animated-cursor1 600ms steps(29,end) infinite;
+}
+@keyframes animated-text1{
+  from{width: 0;}
+  to{width: 200px;}
+}
+@keyframes animated-cursor1{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+.typewriter2 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 15px;
+  padding-left: 900px;
+  color: rgba(255,255,255,.70);
+}
+.typewriter2 {
+  animation: animated-text2 2s steps(29,end) 1s 1 normal both,
+             animated-cursor2 600ms steps(29,end) infinite;
+}
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 250px;}
+}
+@keyframes animated-cursor2{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
 }
